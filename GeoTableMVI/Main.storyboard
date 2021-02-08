@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16095" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16084.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--State Presenter View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GTStatePresenterViewController" customModule="GeoTableMVI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fij-Q5-jT1">
+                                <rect key="frame" x="0.0" y="172" width="375" height="495"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GeoTableCountryCell" rowHeight="67" id="b5b-gn-DQH" customClass="GeoTableCountryCell" customModule="GeoTableMVI" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="67"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b5b-gn-DQH" id="Uh4-Ez-DjT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="67"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Israel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xO0-lB-FqX">
+                                                    <rect key="frame" x="15" y="11" width="51" height="26.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ישראל" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prT-ax-NET">
+                                                    <rect key="frame" x="20" y="35" width="42.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="prT-ax-NET" firstAttribute="leading" secondItem="Uh4-Ez-DjT" secondAttribute="leadingMargin" constant="5" id="ABa-lo-7V0"/>
+                                                <constraint firstItem="xO0-lB-FqX" firstAttribute="leading" secondItem="Uh4-Ez-DjT" secondAttribute="leadingMargin" id="DC5-ej-Ogb"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="prT-ax-NET" secondAttribute="bottom" id="evo-d9-Be3"/>
+                                                <constraint firstItem="xO0-lB-FqX" firstAttribute="top" secondItem="Uh4-Ez-DjT" secondAttribute="topMargin" id="oLO-pH-RFB"/>
+                                                <constraint firstItem="prT-ax-NET" firstAttribute="top" secondItem="xO0-lB-FqX" secondAttribute="bottom" constant="-2.5" id="rRK-sd-fHl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="CountryNameLable" destination="xO0-lB-FqX" id="qxO-jI-Meo"/>
+                                            <outlet property="CountryNativeNameLable" destination="prT-ax-NET" id="JBn-Jb-YuT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Xfz-b9-e03">
+                                <rect key="frame" x="0.0" y="110" width="375" height="62"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qkz-zV-NZ4">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="62"/>
+                                        <state key="normal" title="Name"/>
+                                        <connections>
+                                            <action selector="OnSortButtonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ap-Xy-jHZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7I-8o-Nfh">
+                                        <rect key="frame" x="125" y="0.0" width="125" height="62"/>
+                                        <state key="normal" title="Native Name"/>
+                                        <connections>
+                                            <action selector="OnSortButtonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ufi-Kx-fgF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vB-Q4-or6">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="62"/>
+                                        <state key="normal" title="Area"/>
+                                        <connections>
+                                            <action selector="OnSortButtonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DYr-FN-JZB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sort by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVR-7G-Hqp">
+                                <rect key="frame" x="16" y="89.5" width="60.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GeoTable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlN-6C-Krv">
+                                <rect key="frame" x="16" y="20.5" width="169" height="51.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Xfz-b9-e03" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="3wc-ay-a0A"/>
+                            <constraint firstItem="rVR-7G-Hqp" firstAttribute="top" secondItem="zlN-6C-Krv" secondAttribute="bottom" constant="17.5" id="ANi-4G-Qa3"/>
+                            <constraint firstItem="Xfz-b9-e03" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EiW-Iq-xp9"/>
+                            <constraint firstItem="rVR-7G-Hqp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="FlM-is-sJx"/>
+                            <constraint firstItem="zlN-6C-Krv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Mhl-3f-IpV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fij-Q5-jT1" secondAttribute="bottom" id="Ua2-9z-ywt"/>
+                            <constraint firstItem="fij-Q5-jT1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Wsg-Ik-ONo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fij-Q5-jT1" secondAttribute="trailing" id="XK0-0D-5yM"/>
+                            <constraint firstItem="zlN-6C-Krv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20.5" id="ceT-wp-xy5"/>
+                            <constraint firstItem="fij-Q5-jT1" firstAttribute="top" secondItem="Xfz-b9-e03" secondAttribute="bottom" id="iRs-JO-Bgc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xfz-b9-e03" secondAttribute="trailing" id="ntH-KR-Psz"/>
+                            <constraint firstItem="fij-Q5-jT1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="172" id="wxz-CP-YhC"/>
+                            <constraint firstItem="Xfz-b9-e03" firstAttribute="top" secondItem="rVR-7G-Hqp" secondAttribute="bottom" id="xGy-CV-vM1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="CountriesTable" destination="fij-Q5-jT1" id="Lw0-mB-ZkW"/>
+                        <outlet property="SortByAreaButton" destination="7vB-Q4-or6" id="auu-bC-Tq9"/>
+                        <outlet property="SortByNameButton" destination="Qkz-zV-NZ4" id="6HH-k1-zir"/>
+                        <outlet property="SortByNativeNameButton" destination="d7I-8o-Nfh" id="O0Z-fE-3ZC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-66.400000000000006" y="0.44977511244377816"/>
+        </scene>
+    </scenes>
+</document>

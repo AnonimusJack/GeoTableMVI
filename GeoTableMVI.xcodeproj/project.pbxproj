@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		890489EB25B44842001B02AC /* GTAsyncDataReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890489EA25B44842001B02AC /* GTAsyncDataReceiver.swift */; };
+		890489EE25B449B1001B02AC /* GTStatePresenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890489ED25B449B1001B02AC /* GTStatePresenterViewController.swift */; };
+		890489F125B44E29001B02AC /* GTErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890489F025B44E29001B02AC /* GTErrors.swift */; };
+		8916AA4625B19F47001EE03E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8916AA4525B19F47001EE03E /* AppDelegate.swift */; };
+		8916AA4F25B19F51001EE03E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8916AA4E25B19F51001EE03E /* Assets.xcassets */; };
+		8916AA5225B19F51001EE03E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8916AA5025B19F51001EE03E /* LaunchScreen.storyboard */; };
+		8916AA5A25B1A032001EE03E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8916AA5925B1A031001EE03E /* Podfile */; };
+		8916AA5D25B1B878001EE03E /* GTCountryDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8916AA5C25B1B878001EE03E /* GTCountryDataRepository.swift */; };
+		8916AA6025B1BEA1001EE03E /* GTCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8916AA5F25B1BEA1001EE03E /* GTCountry.swift */; };
+		89478D0E25B74EFF006F529C /* GTCountryArrayUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89478D0D25B74EFF006F529C /* GTCountryArrayUtilities.swift */; };
+		89493F8925B4A0F200E7CED3 /* GTStateChangesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89493F8825B4A0F200E7CED3 /* GTStateChangesDelegate.swift */; };
+		89493F8C25B4A81700E7CED3 /* GTState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89493F8B25B4A81700E7CED3 /* GTState.swift */; };
+		89493F9025B4B13300E7CED3 /* GTErrorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89493F8F25B4B13300E7CED3 /* GTErrorState.swift */; };
+		89493F9225B4B50C00E7CED3 /* GTAllCountriesState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89493F9125B4B50C00E7CED3 /* GTAllCountriesState.swift */; };
+		89493F9425B4C3B100E7CED3 /* GTCountryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89493F9325B4C3B100E7CED3 /* GTCountryState.swift */; };
+		89D19D3225B5A2F500EB15F2 /* GeoTableSelectedCountryHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89D19D3125B5A2F400EB15F2 /* GeoTableSelectedCountryHeader.xib */; };
+		89D19D3525B5A30000EB15F2 /* GeoTableSelectedCountryHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D19D3325B5A30000EB15F2 /* GeoTableSelectedCountryHeader.swift */; };
+		89D19D3625B5A30000EB15F2 /* GeoTableCountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D19D3425B5A30000EB15F2 /* GeoTableCountryCell.swift */; };
+		89D19D3825B5A31700EB15F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D19D3725B5A31600EB15F2 /* Main.storyboard */; };
+		DCC298FA6E96421E695477E6 /* Pods_GeoTableMVI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C63854BE4C3FFE1A9BECE1 /* Pods_GeoTableMVI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		40C63854BE4C3FFE1A9BECE1 /* Pods_GeoTableMVI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoTableMVI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		890489EA25B44842001B02AC /* GTAsyncDataReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTAsyncDataReceiver.swift; sourceTree = "<group>"; };
+		890489ED25B449B1001B02AC /* GTStatePresenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTStatePresenterViewController.swift; sourceTree = "<group>"; };
+		890489F025B44E29001B02AC /* GTErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTErrors.swift; sourceTree = "<group>"; };
+		8916AA4225B19F47001EE03E /* GeoTableMVI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoTableMVI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8916AA4525B19F47001EE03E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8916AA4E25B19F51001EE03E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8916AA5125B19F51001EE03E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8916AA5325B19F51001EE03E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8916AA5925B1A031001EE03E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8916AA5C25B1B878001EE03E /* GTCountryDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTCountryDataRepository.swift; sourceTree = "<group>"; };
+		8916AA5F25B1BEA1001EE03E /* GTCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTCountry.swift; sourceTree = "<group>"; };
+		89478D0D25B74EFF006F529C /* GTCountryArrayUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTCountryArrayUtilities.swift; sourceTree = "<group>"; };
+		89493F8825B4A0F200E7CED3 /* GTStateChangesDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTStateChangesDelegate.swift; sourceTree = "<group>"; };
+		89493F8B25B4A81700E7CED3 /* GTState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTState.swift; sourceTree = "<group>"; };
+		89493F8F25B4B13300E7CED3 /* GTErrorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTErrorState.swift; sourceTree = "<group>"; };
+		89493F9125B4B50C00E7CED3 /* GTAllCountriesState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTAllCountriesState.swift; sourceTree = "<group>"; };
+		89493F9325B4C3B100E7CED3 /* GTCountryState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GTCountryState.swift; sourceTree = "<group>"; };
+		89D19D3125B5A2F400EB15F2 /* GeoTableSelectedCountryHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeoTableSelectedCountryHeader.xib; sourceTree = "<group>"; };
+		89D19D3325B5A30000EB15F2 /* GeoTableSelectedCountryHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoTableSelectedCountryHeader.swift; sourceTree = "<group>"; };
+		89D19D3425B5A30000EB15F2 /* GeoTableCountryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoTableCountryCell.swift; sourceTree = "<group>"; };
+		89D19D3725B5A31600EB15F2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		912CADEAB2ABACEB64E9BA29 /* Pods-GeoTableMVI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoTableMVI.release.xcconfig"; path = "Target Support Files/Pods-GeoTableMVI/Pods-GeoTableMVI.release.xcconfig"; sourceTree = "<group>"; };
+		F05B05D442382F9F885666AE /* Pods-GeoTableMVI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoTableMVI.debug.xcconfig"; path = "Target Support Files/Pods-GeoTableMVI/Pods-GeoTableMVI.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8916AA3F25B19F46001EE03E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC298FA6E96421E695477E6 /* Pods_GeoTableMVI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A921AA4BE2DCA67E110CD80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F05B05D442382F9F885666AE /* Pods-GeoTableMVI.debug.xcconfig */,
+				912CADEAB2ABACEB64E9BA29 /* Pods-GeoTableMVI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		890489E925B447CD001B02AC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				890489EA25B44842001B02AC /* GTAsyncDataReceiver.swift */,
+				89493F8825B4A0F200E7CED3 /* GTStateChangesDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		890489EC25B4489F001B02AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				89D19D3125B5A2F400EB15F2 /* GeoTableSelectedCountryHeader.xib */,
+				890489ED25B449B1001B02AC /* GTStatePresenterViewController.swift */,
+				89D19D3425B5A30000EB15F2 /* GeoTableCountryCell.swift */,
+				89D19D3325B5A30000EB15F2 /* GeoTableSelectedCountryHeader.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		890489EF25B44E14001B02AC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				890489F025B44E29001B02AC /* GTErrors.swift */,
+				89478D0D25B74EFF006F529C /* GTCountryArrayUtilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8916AA3925B19F46001EE03E = {
+			isa = PBXGroup;
+			children = (
+				8916AA5925B1A031001EE03E /* Podfile */,
+				8916AA4425B19F47001EE03E /* GeoTableMVI */,
+				8916AA4325B19F47001EE03E /* Products */,
+				1A921AA4BE2DCA67E110CD80 /* Pods */,
+				90FA5342BA956AA821A14973 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8916AA4325B19F47001EE03E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8916AA4225B19F47001EE03E /* GeoTableMVI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8916AA4425B19F47001EE03E /* GeoTableMVI */ = {
+			isa = PBXGroup;
+			children = (
+				89493F8A25B4A79F00E7CED3 /* States */,
+				890489EF25B44E14001B02AC /* Utilities */,
+				890489EC25B4489F001B02AC /* Views */,
+				890489E925B447CD001B02AC /* Protocols */,
+				8916AA5B25B1B847001EE03E /* Data */,
+				8916AA4525B19F47001EE03E /* AppDelegate.swift */,
+				89D19D3725B5A31600EB15F2 /* Main.storyboard */,
+				8916AA4E25B19F51001EE03E /* Assets.xcassets */,
+				8916AA5025B19F51001EE03E /* LaunchScreen.storyboard */,
+				8916AA5325B19F51001EE03E /* Info.plist */,
+			);
+			path = GeoTableMVI;
+			sourceTree = "<group>";
+		};
+		8916AA5B25B1B847001EE03E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8916AA5E25B1BE8D001EE03E /* Models */,
+				8916AA5C25B1B878001EE03E /* GTCountryDataRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8916AA5E25B1BE8D001EE03E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8916AA5F25B1BEA1001EE03E /* GTCountry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		89493F8A25B4A79F00E7CED3 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				89493F8B25B4A81700E7CED3 /* GTState.swift */,
+				89493F8F25B4B13300E7CED3 /* GTErrorState.swift */,
+				89493F9125B4B50C00E7CED3 /* GTAllCountriesState.swift */,
+				89493F9325B4C3B100E7CED3 /* GTCountryState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		90FA5342BA956AA821A14973 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40C63854BE4C3FFE1A9BECE1 /* Pods_GeoTableMVI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8916AA4125B19F46001EE03E /* GeoTableMVI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8916AA5625B19F52001EE03E /* Build configuration list for PBXNativeTarget "GeoTableMVI" */;
+			buildPhases = (
+				B8AE3DFE48E372ECB7D6B0FC /* [CP] Check Pods Manifest.lock */,
+				8916AA3E25B19F46001EE03E /* Sources */,
+				8916AA3F25B19F46001EE03E /* Frameworks */,
+				8916AA4025B19F46001EE03E /* Resources */,
+				D46C3A95D79396CC6FA5FFC2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoTableMVI;
+			productName = GeoTableMVI;
+			productReference = 8916AA4225B19F47001EE03E /* GeoTableMVI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8916AA3A25B19F46001EE03E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = JFTech;
+				TargetAttributes = {
+					8916AA4125B19F46001EE03E = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 8916AA3D25B19F46001EE03E /* Build configuration list for PBXProject "GeoTableMVI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8916AA3925B19F46001EE03E;
+			productRefGroup = 8916AA4325B19F47001EE03E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8916AA4125B19F46001EE03E /* GeoTableMVI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8916AA4025B19F46001EE03E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8916AA5225B19F51001EE03E /* LaunchScreen.storyboard in Resources */,
+				8916AA4F25B19F51001EE03E /* Assets.xcassets in Resources */,
+				8916AA5A25B1A032001EE03E /* Podfile in Resources */,
+				89D19D3825B5A31700EB15F2 /* Main.storyboard in Resources */,
+				89D19D3225B5A2F500EB15F2 /* GeoTableSelectedCountryHeader.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B8AE3DFE48E372ECB7D6B0FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoTableMVI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D46C3A95D79396CC6FA5FFC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeoTableMVI/Pods-GeoTableMVI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeoTableMVI/Pods-GeoTableMVI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeoTableMVI/Pods-GeoTableMVI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8916AA3E25B19F46001EE03E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89493F8925B4A0F200E7CED3 /* GTStateChangesDelegate.swift in Sources */,
+				890489EE25B449B1001B02AC /* GTStatePresenterViewController.swift in Sources */,
+				890489F125B44E29001B02AC /* GTErrors.swift in Sources */,
+				890489EB25B44842001B02AC /* GTAsyncDataReceiver.swift in Sources */,
+				89478D0E25B74EFF006F529C /* GTCountryArrayUtilities.swift in Sources */,
+				89493F9025B4B13300E7CED3 /* GTErrorState.swift in Sources */,
+				89493F9225B4B50C00E7CED3 /* GTAllCountriesState.swift in Sources */,
+				89493F8C25B4A81700E7CED3 /* GTState.swift in Sources */,
+				89493F9425B4C3B100E7CED3 /* GTCountryState.swift in Sources */,
+				8916AA4625B19F47001EE03E /* AppDelegate.swift in Sources */,
+				8916AA6025B1BEA1001EE03E /* GTCountry.swift in Sources */,
+				8916AA5D25B1B878001EE03E /* GTCountryDataRepository.swift in Sources */,
+				89D19D3625B5A30000EB15F2 /* GeoTableCountryCell.swift in Sources */,
+				89D19D3525B5A30000EB15F2 /* GeoTableSelectedCountryHeader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8916AA5025B19F51001EE03E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8916AA5125B19F51001EE03E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8916AA5425B19F51001EE03E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8916AA5525B19F51001EE03E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8916AA5725B19F52001EE03E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F05B05D442382F9F885666AE /* Pods-GeoTableMVI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeoTableMVI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JFT.GeoTableMVI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8916AA5825B19F52001EE03E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 912CADEAB2ABACEB64E9BA29 /* Pods-GeoTableMVI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeoTableMVI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JFT.GeoTableMVI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8916AA3D25B19F46001EE03E /* Build configuration list for PBXProject "GeoTableMVI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8916AA5425B19F51001EE03E /* Debug */,
+				8916AA5525B19F51001EE03E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8916AA5625B19F52001EE03E /* Build configuration list for PBXNativeTarget "GeoTableMVI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8916AA5725B19F52001EE03E /* Debug */,
+				8916AA5825B19F52001EE03E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8916AA3A25B19F46001EE03E /* Project object */;
+}
